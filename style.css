@@ -1,0 +1,111 @@
+body {
+  background-color: #ffe5ec;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+.container-input {
+  max-width: 480px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-password {
+  max-width: 480px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease all;
+}
+
+.container-input span {
+  color: #868491;
+  font-size: 20px;
+  text-align: center;
+  cursor: default;
+}
+
+#password {
+  width: 340px;
+  height: 30px;
+  color: #ff477e;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid #fb6f92;
+  background-color: #ffe5ec;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#password:hover {
+  transform: scale(1.05);
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffc2d1;
+  height: 18px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: #fb6f92;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-cta {
+  height: 30px;
+  width: 480px;
+  background-color: #fb6f92;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-cta:hover {
+  background-color: #ff477e;
+}
+
+.toast {
+  color: #fb6f92;
+  opacity: 90%;
+  cursor: default;
+}

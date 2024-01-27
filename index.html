@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <meta name="author" content="IaisaSouto">
+    <meta name="description" content="Um site que gera senhas aleatórias e seguras">
+    <meta name="keywords" content="gerador, senhas, gerador de senhas, gerar senhas">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img class="logo" src="/assets/logo.png" alt="Logo gerador de senhas"/>
+    <main class="container-input">
+      <span>Senha com <span id="valor"> </span> caracteres</span>
+      <input id="slider" class="slider" type="range" min="8" max="32" value="8"/>
+      <button id="button" class="button-cta">Gerar senha</button>
+      <div  class="container-password ">
+        <span class="title">Aqui está sua senha:</span>
+        <span id="password" class="password">
+        </span>
+    </main>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
